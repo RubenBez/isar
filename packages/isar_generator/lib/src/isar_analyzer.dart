@@ -72,7 +72,6 @@ class IsarAnalyzer {
     if (indexes.map((e) => e.name).distinct().length != indexes.length) {
       err('Two or more indexes have the same name.', element);
     }
-    print(indexes);
 
     var idProperty = properties.firstOrNullWhere((it) => it.isId);
     if (idProperty == null) {

@@ -1,4 +1,12 @@
+## 1.0.0+2
+- Added MacOS, Windows and Linux binaries
+- Fixed iOS stripping
+- Reduced memory consumption when opening an instance
+
 ## 1.0.0+1
+- Fixed missing binaries
+
+## 1.0.0
 
 Switched from liblmdb to libmdbx for better performance, more stability and many internal improvements.
 
