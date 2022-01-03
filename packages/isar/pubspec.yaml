@@ -14,5 +14,5 @@ dependencies:
 
 dev_dependencies:
   test: ^1.16.0
-  ffigen: ^4.1.2
+  ffigen: ^3.0.0
   lints: ^1.0.1
