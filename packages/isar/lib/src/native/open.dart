@@ -24,7 +24,7 @@ Future<Isar> openIsarNative({
   final path = p.join(directory, name);
   await Directory(path).create(recursive: true);
   initializeIsarCore();
-  IC.isar_connect_dart_api(NativeApi.postCObject);
+  IC.isar_connect_dart_api(NativeApi.postCObject.cast());
 
   final schema = '[' + schemas.map((e) => e.schema).join(',') + ']';
 

@@ -6,7 +6,7 @@ homepage: https://isar.dev
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.20.0"
+  flutter: ">=2.0.0"
 
 dependencies:
   flutter:
@@ -18,6 +18,12 @@ flutter:
     platforms:
       android:
         package: dev.isar.isar_flutter_libs
-        pluginClass: IsarFlutterPlugin
+        pluginClass: IsarFlutterLibsPlugin
       ios:
-        pluginClass: IsarFlutterPlugin
+        pluginClass: IsarFlutterLibsPlugin
+      macos:
+        pluginClass: IsarFlutterLibsPlugin
+      linux:
+        pluginClass: IsarFlutterLibsPlugin
+      windows:
+        pluginClass: IsarFlutterLibsPlugin
