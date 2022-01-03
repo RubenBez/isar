@@ -321,10 +321,10 @@ class IsarCoreBindings {
       _isar_json_import_ptr.asFunction<_dart_isar_json_import>();
 
   void isar_connect_dart_api(
-    ffi.Pointer<ffi.Void> data,
+    ffi.Pointer<ffi.NativeFunction<DartPostCObjectFnType>> ptr,
   ) {
     return _isar_connect_dart_api(
-      data,
+      ptr,
     );
   }
 
@@ -1718,12 +1718,17 @@ typedef _dart_isar_json_import = int Function(
   int replace_on_conflict,
 );
 
+typedef DartPostCObjectFnType = ffi.Int8 Function(
+  ffi.Int64,
+  ffi.Pointer<ffi.NativeType>,
+);
+
 typedef _c_isar_connect_dart_api = ffi.Void Function(
-  ffi.Pointer<ffi.Void> data,
+  ffi.Pointer<ffi.NativeFunction<DartPostCObjectFnType>> ptr,
 );
 
 typedef _dart_isar_connect_dart_api = void Function(
-  ffi.Pointer<ffi.Void> data,
+  ffi.Pointer<ffi.NativeFunction<DartPostCObjectFnType>> ptr,
 );
 
 typedef _c_isar_filter_static = ffi.Void Function(
