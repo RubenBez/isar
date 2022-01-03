@@ -83,6 +83,8 @@ final isar = await Isar.open(
 
 The [Isar Inspector](https://github.com/isar/isar/releases/latest) allows you to inspect the Isar instances & collections of your app in real time. You can execute queries, switch between instances and sort the data.
 
+*Note: The Inspector is still in beta and may contain bugs.*
+
 <img src="https://raw.githubusercontent.com/isar/isar/main/.github/assets/isar-inspector.png?sanitize=true">
 
 
