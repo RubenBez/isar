@@ -50,7 +50,8 @@ void initializeIsarCore({Map<String, String> dylibs = const {}}) {
   } else if (Platform.isWindows) {
     dylib = dylibs['windows'] ?? 'libisar.dll';
   } else if (Platform.isLinux) {
-    dylib = dylibs['linux'] ?? 'libisar.so';
+    dylib = dylibs['linux'] ??
+        '${File(Platform.resolvedExecutable).parent.path}/lib/libisar.so';
   }
   try {
     if (Platform.isIOS) {
