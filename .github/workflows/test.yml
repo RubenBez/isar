@@ -63,7 +63,6 @@ jobs:
           script: "flutter drive --driver=test_driver/isar_test.dart --target=test_driver/isar.dart"
   
   drive_desktop:
-    test:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest]
